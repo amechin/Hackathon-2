@@ -1,0 +1,29 @@
+/* GENERAL */
+
+/* HEADER */
+.header {
+    height: 100px;
+    overflow: hidden;
+}
+.logo-img {
+    width: 10%;
+}
+#navbar {
+    margin: 0 0 0 60%;
+}
+@media screen and (max-width: 688px)
+{
+    .navbar-brand {
+        /* width: 20% !important; */
+    }
+    #navbar {
+        margin: 0 0 0 80%;
+    }
+    .nav-button {
+        margin: 0 0 2% 85%;
+    }
+}
+
+/* CONTENT */
+
+/* FOOTER */
