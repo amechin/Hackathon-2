@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+
     <list default="true" id="b5435d19-e647-4207-83f7-3e9f4b340016" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -62,6 +63,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-759">
               <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+
             </state>
           </provider>
         </entry>
@@ -95,6 +97,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+
         <entry file="file://$PROJECT_DIR$/src/Controller/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
@@ -265,7 +268,7 @@
     <option name="x" value="31" />
     <option name="y" value="51" />
     <option name="width" value="1369" />
-    <option name="height" value="840" />
+    <option name="height" value="840" /
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -290,6 +293,7 @@
               <item name="hackathon2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
+
             </path>
             <path>
               <item name="hackathon2" type="b2602c69:ProjectViewProjectNode" />
@@ -305,6 +309,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -312,6 +317,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
