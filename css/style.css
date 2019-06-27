@@ -1,24 +1,26 @@
 /* GENERAL */
-
 h2 {
     color: #E34138;
 }
 
 /* HEADER */
-
 .header {
     height: 100px;
     overflow: hidden;
     z-index: 10;
 }
+.logo {
+    width: 100px;
+}
 .logo-img {
-    width: 10%;
+    width: 40%;
 }
 #navbar {
     margin: 0 0 0 60%;
 }
 .navbar-select {
-    width: 200px;
+    max-width: 200px;
+    width: auto;
 }
 @media screen and (max-width: 688px)
 {
@@ -40,11 +42,15 @@ h2 {
 }
 
 /* CENTRAL */
-
-#central {
+.background {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
+}
+#central {
     height: 600px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
 } 
 .title-command {
     margin-bottom: 20px;
@@ -53,7 +59,7 @@ h2 {
 .command-resto {
     background-color: #fff;
     border-radius: 10px;
-    height: 180px;
+    min-height: 180px;
 }
 .command-button {
     margin: 0 0 30px 0;

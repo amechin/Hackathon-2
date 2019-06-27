@@ -10,60 +10,62 @@
 </head>
 
 <body>
-
-    <header class="header">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-            <a class="navbar-brand" href="./index.php"><img class="logo-img" alt="" src="./img/burger.png"/><span>Just Eat</span></a>
-            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav-select navbar-nav">
-                <select class="custom-select">
-                    <li class="nav-item active">
-                    <option selected>Open this select menu</option>
-                    </li>
-                    <li class="nav-item">
-                    <option value="1">One</option>
-                    </li>
-                    <li class="nav-item">
-                    <option value="2">Two</option>
-                    </li>
-                    <li class="nav-item">
-                    <option value="3">Three</option>
-                    </li>
-                </select>
-              </ul>
-              
-            </div>
-          </nav>
-    </header>
-   
-    <section id="central" style="display: flex;align-items:center;justify-content:center;">
-       <div class="container command-resto" style="margin: auto;">
-           <div class="row">
-                <div class="col-12">
-                    <h2 class="title-command text-center">C'est bon de commander</h2>
-                    <h3 class="title-command text-center">Faites-vous livrer les meilleurs restos près de chez vous.</h3>
-                        <div class="container-fluid">
-                            <div class="row">
-                                    <div class="col-4"></div>
-                                        <div class="col-6">
-                                            <form class="form-inline">
-                                                <div class="form-group mx-sm-3 mb-2">
-                                                    <label for="inputAddress" class="sr-only">Entrez votre adresse</label>
-                                                    <input type="inputAddress" class="form-control" id="inputAddress" placeholder="Entrez votre adresse">
+    <div class="background">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <a class="logo navbar-brand" href="./index.php"><img class="logo-img" alt="" src="./img/burger.png"/><span>Just Eat</span></a>
+                <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar">
+                <ul class="nav-select navbar-nav">
+                    <select class="custom-select">
+                        <li class="nav-item active">
+                        <option selected>Open this select menu</option>
+                        </li>
+                        <li class="nav-item">
+                        <option value="1">One</option>
+                        </li>
+                        <li class="nav-item">
+                        <option value="2">Two</option>
+                        </li>
+                        <li class="nav-item">
+                        <option value="3">Three</option>
+                        </li>
+                    </select>
+                </ul>
+                
+                </div>
+            </nav>
+        </header>
+    
+        <section id="central">
+            <div class="container command-resto" style="margin: auto;">
+                <div class="row">
+                        <div class="col-12">
+                            <h2 class="title-command text-center">C'est bon de commander</h2>
+                            <h3 class="title-command text-center">Faites-vous livrer les meilleurs restos près de chez vous.</h3>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                            <div class="col-2 col-md-4"></div>
+                                                <div class="col-8 col-md-6">
+                                                    <form class="form-inline">
+                                                        <div class="form-group mx-sm-3 mb-2">
+                                                            <input type="inputAddress" class="form-control" id="inputAddress" placeholder="Entrez votre adresse...">
+                                                        </div>
+                                                        <div class="d-flex justify-content-center">
+                                                            <button type="submit" class="align-middle btn btn-primary mb-2">Je commande</button>
+                                                        </div>
+                                                    </form>
                                                 </div>
-                                                <button type="submit" class="btn btn-primary mb-2">Je commande</button>
-                                            </form>
-                                        </div>
-                                    <div class="col-2"></div>
-                            </div>
+                                            <div class="col-2 col-md-2"></div>
+                                    </div>
+                                </div>
                         </div>
                 </div>
-           </div>
-       </div>
-    </section>
+            </div>
+        </section>
+    </div>
 
     <section id="resto">
        <div class="container">
@@ -87,5 +89,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/ed4e9fbefd.js"></script>
 </body>
 </html>
