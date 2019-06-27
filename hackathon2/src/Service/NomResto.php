@@ -16,8 +16,8 @@ class NomResto
 
         for($i=0;$i<63;$i++) {
             $NomResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Name"]["0"]["text"];
-            var_dump($NomResto);
         }
+        return $NomResto;
     }
 
 
@@ -30,8 +30,8 @@ class NomResto
 
         for($i=0;$i<63;$i++) {
             $descriptionResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Restaurant Link"]["0"]["text"];
-            var_dump($descriptionResto);
         }
+        return $descriptionResto;
     }
 
     public function logoResto()
@@ -43,9 +43,8 @@ class NomResto
 
         for($i=0;$i<63;$i++) {
             $logoResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Logo"]["0"]["src"];
-            echo "<img src='".$logoResto[$i]."'>";
-            //var_dump($logoResto);
         }
+        return $logoResto;
     }
 
 
