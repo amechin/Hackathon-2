@@ -1,15 +1,141 @@
 {% extends 'base.html.twig' %}
 
-{% block body %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p>test</p>
+{% block title %}Hello HomeController!{% endblock %}
+{% block header %}
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center my-5">
+                    <h1>Commander Malin</h1>
+                </div>
             </div>
-            <div class="col-md-4">
-                <p>test2</p>
-            </div>
+            <form class="colorform py-3">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-5">
+                        <input type="text" name="text" class="form-control" placeholder="Adresse">
+                    </div>
+                    <div class="col">
+                        <a href="" class="btn btn-danger">Envoyer</a>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+{% endblock %}
+{% block body %}
     {{ dump(tags) }}
+    {% for tags in tags |slice(0,6) %}
+        {{ tags }}
+        <br>
+    {% endfor %}
+    <br>
+    {% for tags in tags |slice(6,6) %}
+        {{ tags }}
+        <br>
+    {% endfor %}
+    <br>
+    {% for tags in tags |slice(12,6) %}
+        {{ tags }}
+        <br>
+    {% endfor %}
+
+    <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="card-deck justify-content-center">
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck justify-content-center">
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck justify-content-center">
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                    <div class="mx-5">
+                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container-fluid mb-5">
+        {% for i in 0..5 %}
+            <div class="row">
+                <div class="col-md-7 col-sm-6 col-xs-6 text-center back m-5">
+                    <p>test</p>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6 text-center back m-5">
+                    <p>test2</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 text-center back m-5">
+                    <p>test2</p>
+                </div>
+                <div class="col-md-7 col-sm-6 text-center back m-5">
+                    <p>test</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
 {% endblock %}
