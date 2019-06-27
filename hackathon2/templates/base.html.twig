@@ -8,8 +8,8 @@
         {% endblock %}
     </head>
     <header>
-        <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar navbar-dark">
+            <a class="navbar-brand" href="#">DelivMoiCa</a>
         </nav>
         {% block header %}
         {% endblock %}
@@ -20,5 +20,12 @@
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
         {% endblock %}
+    <footer>
+        <div class="row">
+            <div class="col-md-11 text-right mt-5">
+                <a href="" class="btn btn-danger">Commande</a>
+            </div>
+        </div>
+    </footer>
     </body>
 </html>
