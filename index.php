@@ -53,8 +53,8 @@
                                                         <div class="form-group mx-sm-3 mb-2">
                                                             <input type="inputAddress" class="form-control" id="inputAddress" placeholder="Entrez votre adresse...">
                                                         </div>
-                                                        <div class="d-flex justify-content-center">
-                                                            <button type="submit" class="align-middle btn btn-primary mb-2">Je commande</button>
+                                                        <div class="text-center">
+                                                            <button type="submit" class="btn btn-primary mb-2">Je commande</button>
                                                         </div>
                                                     </form>
                                                 </div>

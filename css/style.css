@@ -22,24 +22,6 @@ h2 {
     max-width: 200px;
     width: auto;
 }
-@media screen and (max-width: 688px)
-{
-    /* .navbar-brand {
-            width: 20% !important; 
-    } */
-    #navbar {
-        margin: 0 0 0 80%;
-        height: auto;
-    }
-    #navbar > .clear {
-        clear: both;
-        height: 0; 
-        overflow: hidden;
-    }
-    .nav-button {
-        margin: 0 0 2% 85%;
-    }
-}
 
 /* CENTRAL */
 .background {
