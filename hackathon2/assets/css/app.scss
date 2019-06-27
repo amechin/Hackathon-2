@@ -1,5 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
+body
+{
+  background-image: url("https://image.noelshack.com/fichiers/2019/26/4/1561640928-body.png");
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
 .colorform
 {
   background-color: black;
@@ -17,7 +24,7 @@
   opacity: 0.5 !important;
   border: solid 0.3em;
   border-color: red;
-  height: 150px;
+  height: 100%;
 }
 footer
 {

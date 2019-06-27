@@ -24,22 +24,6 @@
     </div>
 {% endblock %}
 {% block body %}
-    {{ dump(tags) }}
-    {% for tags in tags |slice(0,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-    <br>
-    {% for tags in tags |slice(6,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-    <br>
-    {% for tags in tags |slice(12,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-
     <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -119,21 +103,13 @@
         </a>
     </div>
     <div class="container-fluid mb-5">
-        {% for i in 0..5 %}
+        {% for i in 0..62 %}
             <div class="row">
-                <div class="col-md-7 col-sm-6 col-xs-6 text-center back m-5">
-                    <p>test</p>
+                <div class="col-md-7 col-sm-6 col-xs-6 text-center back m-5 {%  if i is divisible by(2) %}order-last{%  endif %}">
+                    <p>{{ nameResto[i] }}</p>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-6 text-center back m-5">
-                    <p>test2</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 text-center back m-5">
-                    <p>test2</p>
-                </div>
-                <div class="col-md-7 col-sm-6 text-center back m-5">
-                    <p>test</p>
+                    <p class="m-2"><img src="{{ logos[i] }}" alt="logo resto">/p>
                 </div>
             </div>
         {% endfor %}
