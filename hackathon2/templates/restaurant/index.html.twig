@@ -3,6 +3,7 @@
 {% block title %}Hello RestaurantController!{% endblock %}
 
 {% block body %}
+    <div class="container-fluid bodyResto">
     <div class="containe-fluid info-Resto shadow">
         <div class="container d-flex justify-content-lg-around">
             <div class="row pt-5 pb-5">
@@ -15,6 +16,7 @@
                     <p>Desrciption du restaurant</p>
                 </div>
                 <div class="col-12 col-md-4"><img src="https://via.placeholder.com/350" alt="Image restaurant"></div>
+                <img class="positionBonhomme" src="https://image.noelshack.com/fichiers/2019/26/4/1561650226-cuisine.png" alt="">
             </div>
         </div>
     </div>
@@ -46,6 +48,7 @@
         {% endfor %}
         </div>
         </div>
+    </div>
     </div>
 
 {% endblock %}

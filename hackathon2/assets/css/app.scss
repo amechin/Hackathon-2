@@ -1,12 +1,19 @@
 @import "~bootstrap/scss/bootstrap";
 
-body
+.bodyResto
 {
   color: #313E3F;
   font-family: 'Josefin Slab', serif;
   background-color: #F2A391;
   background-repeat: repeat-x;
   background-size: cover;
+}
+
+.positionBonhomme {
+  position : fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
 }
 
 .colorform
