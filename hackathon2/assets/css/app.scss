@@ -1,1 +1,27 @@
 @import "~bootstrap/scss/bootstrap";
+
+.colorform
+{
+  background-color: black;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+.navbar
+{
+  background-color: black !important;
+  opacity: 0.5 !important;
+}
+.back
+{
+  background-color: black !important;
+  opacity: 0.5 !important;
+  border: solid 0.3em;
+  border-color: red;
+  height: 150px;
+}
+footer
+{
+  height: 200px;
+  background-color: black !important;
+  opacity: 0.5 !important;
+}
