@@ -5,15 +5,20 @@ h2 {
 }
 
 /* HEADER */
+
 .header {
     height: 100px;
     overflow: hidden;
+    z-index: 10;
 }
 .logo-img {
     width: 10%;
 }
 #navbar {
     margin: 0 0 0 60%;
+}
+.navbar-select {
+    width: 200px;
 }
 @media screen and (max-width: 688px)
 {
@@ -40,14 +45,15 @@ h2 {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
     height: 600px;
-    margin: 0 0 0 0;
 } 
+.title-command {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 .command-resto {
     background-color: #fff;
     border-radius: 10px;
-}
-.command-resto {
-    margin: 0 0 0 0;
+    height: 180px;
 }
 .command-button {
     margin: 0 0 30px 0;
