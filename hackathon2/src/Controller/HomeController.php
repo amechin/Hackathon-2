@@ -16,7 +16,7 @@ class HomeController extends AbstractController
     public function index(TagScraper $scraper, NomResto $nomResto)
     {
         $logo = $nomResto->logoResto();
-        $tags = $scraper->getAllTagsByRestaurants();
+        $tags = $scraper->getAllTags();
         $description = $nomResto->descriptionResto();
         $nameResto = $nomResto->nomResto();
 
