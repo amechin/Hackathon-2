@@ -7,6 +7,13 @@
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
+    <header>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+        </nav>
+        {% block header %}
+        {% endblock %}
+    </header>
     <body>
         {% block body %}
         {% endblock %}

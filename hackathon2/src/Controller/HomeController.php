@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\TagRepository;
 use App\Service\TagScraper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
