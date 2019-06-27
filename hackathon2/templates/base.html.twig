@@ -10,7 +10,7 @@
     </head>
     <header>
         <nav class="navbar navbar-dark">
-            <a class="navbar-brand" href="#">DelivMoiCa</a>
+            <a class="navbar-brand" href="{{ path('home') }}">DelivMoiCa</a>
         </nav>
         {% block header %}
         {% endblock %}
@@ -24,7 +24,7 @@
     <footer>
         <div class="row">
             <div class="col-md-11 text-right mt-5">
-                <a href="" class="btn btn-danger">Commande</a>
+                <a href="{{ path('restaurant') }}" class="btn btn-danger">Commande</a>
             </div>
         </div>
     </footer>
