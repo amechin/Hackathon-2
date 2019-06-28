@@ -5,36 +5,27 @@
     <style type="text/css">
         .jumb
         {
-            height: 650px !important;
-            background-image: url("https://image.noelshack.com/fichiers/2019/26/4/1561649835-knack-t-sans-goutte.jpg");
+            height: 35% !important;
+            background-image: url("https://image.noelshack.com/fichiers/2019/26/5/1561711699-pexels-photo-461198.jpeg");
             background-repeat: repeat-x;
             background-size: cover;
+            width: 100% !important;
         }
     </style>
     <div class="container-fluid jumb">
         <div class="row">
             <div class="col-md-12 text-center text-white my-5">
-                <h1>Viens rencontrer des knacks chaude pres de chez toi !!</h1>
+                <h1 class="h1">Viens rencontrer des knacks chaude près de chez toi !!</h1>
             </div>
         </div>
         <div class="row my-3">
-            <div class="col-md-6"></div>
-            <div class="col-md-6 text-center">
+            <div class="col-md-3"></div>
+            <div class="col-md-3 text-right mt-5 ml-3 p-2 boutjumb">
+                <a href="" class="btn btn-danger font-weight-bold">Commander</a>
+            </div>
+            <div class="col-md-5 text-center imgjumb">
                 <img src="https://image.noelshack.com/fichiers/2019/26/4/1561650226-cuisine.png" alt="...">
             </div>
-        </div>
-        <div class="row justify-content-center backform">
-            <form class="colorform py-3">
-                <div class="row">
-                    <div class="col-md-3"></div>
-                    <div class="col-md-5">
-                        <input type="text" name="text" class="form-control" placeholder="Adresse">
-                    </div>
-                    <div class="col">
-                        <a href="" class="btn btn-danger">Envoyer</a>
-                    </div>
-                </div>
-            </form>
         </div>
     </div>
 {% endblock %}
@@ -43,68 +34,62 @@
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="card-deck justify-content-center">
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
+                    {% for toutresto in toutresto|slice(0,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="card-deck justify-content-center">
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
+                    {% for toutresto in toutresto|slice(6,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="card-deck justify-content-center">
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
-                    <div class="mx-5">
-                        <a href=""><img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap"></a>
-                    </div>
+                    {% for toutresto in toutresto|slice(11,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck justify-content-center">
+                    {% for toutresto in toutresto|slice(16,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck justify-content-center">
+                    {% for toutresto in toutresto|slice(21,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card-deck justify-content-center">
+                    {% for toutresto in toutresto|slice(26,5) %}
+                        <div class="mx-5">
+                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <p class="text-white">{{ toutresto.name }}</p>
+                        </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
@@ -116,18 +101,5 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
-    </div>
-    <div class="container my-3">
-        {% for i in 0..6 %}
-            <div class="row my-3">
-                <div class="col-md-7 col-sm-6 col-xs-6 text-center text-white card-body {%  if i is divisible by(2) %}order-last{%  endif %}">
-                    <p>{{ nameResto[i] }}</p>
-                    <p>{{ descriptions[i] }}</p>
-                </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center back">
-                    <div class="m-2"><img src="{{ logos[i] }}" alt="logo resto"></div>
-                </div>
-            </div>
-        {% endfor %}
     </div>
 {% endblock %}
