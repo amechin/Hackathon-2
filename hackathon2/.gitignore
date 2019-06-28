@@ -4,8 +4,10 @@
 /.env.local.php
 /.env.*.local
 /public/bundles/
+/.idea/
 /var/
 /vendor/
+/.idea/
 ../.idea
 /hackathon2/.idea
 ###< symfony/framework-bundle ###

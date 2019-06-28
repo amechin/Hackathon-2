@@ -3,13 +3,14 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap" rel="stylesheet">
         {% block stylesheets %}
             {{ encore_entry_link_tags('app') }}
         {% endblock %}
     </head>
     <header>
         <nav class="navbar navbar-dark">
-            <a class="navbar-brand" href="#">DelivMoiCa</a>
+            <a class="navbar-brand" href="{{ path('home') }}">DelivMoiCa</a>
         </nav>
         {% block header %}
         {% endblock %}
@@ -23,7 +24,7 @@
     <footer>
         <div class="row">
             <div class="col-md-11 text-right mt-5">
-                <a href="" class="btn btn-danger">Commande</a>
+                <a href="{{ path('restaurant') }}" class="btn btn-danger">Commande</a>
             </div>
         </div>
     </footer>

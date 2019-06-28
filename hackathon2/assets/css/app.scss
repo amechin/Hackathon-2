@@ -1,5 +1,27 @@
 @import "~bootstrap/scss/bootstrap";
 
+.bodyResto
+{
+  color: #313E3F;
+  font-family: 'Josefin Slab', serif;
+  background-color: #F2A391;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+body
+{
+  background-color: #484649;
+
+}
+
+.positionBonhomme {
+  height: 40%;
+  position : fixed;
+  bottom: 0px;
+  right: 0px;
+  z-index: 100;
+}
+
 .colorform
 {
   background-color: black;
@@ -8,20 +30,26 @@
 }
 .navbar
 {
-  background-color: black !important;
-  opacity: 0.5 !important;
+  background-color: #313E3F !important;
+  //opacity: 1 !important;
 }
+
 .back
 {
   background-color: black !important;
   opacity: 0.5 !important;
   border: solid 0.3em;
   border-color: red;
-  height: 150px;
+  height: 100%;
 }
+
+.info-Resto {
+  background-color: #FFFFFF;
+}
+
 footer
 {
-  height: 200px;
+  height: 100px;
   background-color: black !important;
   opacity: 0.5 !important;
 }

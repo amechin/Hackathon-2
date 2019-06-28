@@ -18,7 +18,6 @@ class NomResto
             $NomResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Name"]["0"]["text"];
         }
         return $NomResto;
-
     }
 
 
@@ -33,7 +32,6 @@ class NomResto
             $descriptionResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Restaurant Link"]["0"]["text"];
         }
         return $descriptionResto;
-
     }
 
     public function logoResto()
@@ -47,7 +45,6 @@ class NomResto
             $logoResto[] = $obj["result"]["extractorData"]["data"]["0"]["group"][$i]["Logo"]["0"]["src"];
         }
         return $logoResto;
-
     }
 
 

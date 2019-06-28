@@ -2,13 +2,28 @@
 
 {% block title %}Hello HomeController!{% endblock %}
 {% block header %}
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center my-5">
-                    <h1>Commander Malin</h1>
-                </div>
+    <style type="text/css">
+        .jumb
+        {
+            height: 650px !important;
+            background-image: url("https://image.noelshack.com/fichiers/2019/26/4/1561649835-knack-t-sans-goutte.jpg");
+            background-repeat: repeat-x;
+            background-size: cover;
+        }
+    </style>
+    <div class="container-fluid jumb">
+        <div class="row">
+            <div class="col-md-12 text-center text-white my-5">
+                <h1>Viens rencontrer des knacks chaude pres de chez toi !!</h1>
             </div>
+        </div>
+        <div class="row my-3">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 text-center">
+                <img src="https://image.noelshack.com/fichiers/2019/26/4/1561650226-cuisine.png" alt="...">
+            </div>
+        </div>
+        <div class="row justify-content-center backform">
             <form class="colorform py-3">
                 <div class="row">
                     <div class="col-md-3"></div>
@@ -24,23 +39,7 @@
     </div>
 {% endblock %}
 {% block body %}
-    {{ dump(tags) }}
-    {% for tags in tags |slice(0,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-    <br>
-    {% for tags in tags |slice(6,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-    <br>
-    {% for tags in tags |slice(12,6) %}
-        {{ tags }}
-        <br>
-    {% endfor %}
-
-    <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide mt-5" data-interval="false" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="card-deck justify-content-center">
@@ -118,22 +117,15 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <div class="container-fluid mb-5">
-        {% for i in 0..5 %}
-            <div class="row">
-                <div class="col-md-7 col-sm-6 col-xs-6 text-center back m-5">
-                    <p>test</p>
+    <div class="container my-3">
+        {% for i in 0..6 %}
+            <div class="row my-3">
+                <div class="col-md-7 col-sm-6 col-xs-6 text-center text-white card-body {%  if i is divisible by(2) %}order-last{%  endif %}">
+                    <p>{{ nameResto[i] }}</p>
+                    <p>{{ descriptions[i] }}</p>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-6 text-center back m-5">
-                    <p>test2</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 text-center back m-5">
-                    <p>test2</p>
-                </div>
-                <div class="col-md-7 col-sm-6 text-center back m-5">
-                    <p>test</p>
+                <div class="col-md-3 col-sm-6 col-xs-6 text-center back">
+                    <div class="m-2"><img src="{{ logos[i] }}" alt="logo resto"></div>
                 </div>
             </div>
         {% endfor %}
