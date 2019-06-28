@@ -31,6 +31,9 @@ body
 .navbar
 {
   background-color: #313E3F !important;
+  position: fixed;
+  width: 100%;
+  z-index: 150;
   //opacity: 1 !important;
 }
 

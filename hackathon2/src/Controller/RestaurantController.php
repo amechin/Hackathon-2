@@ -11,18 +11,10 @@ use Symfony\Bundel\FrameworkBundle\Controller\Controller;
 
 class RestaurantController extends AbstractController
 {
-    /**
-     * @Route("/restaurant", name="restaurant")
-     */
-    public function index()
-    {
-        return $this->render('restaurant/index.html.twig');
-    }
-
 
     /**
      * @Route("/restaurant/{id<^[0-9-]+$>}", defaults={"id" = 1},
-     *  name="showRestaurantById")
+     *  name="restaurant")
      * @return Response
      **/
     public function showRestaurantById($id)
