@@ -1,17 +1,12 @@
 @import "~bootstrap/scss/bootstrap";
 
-.bodyResto
+body
 {
   color: #313E3F;
   font-family: 'Josefin Slab', serif;
   background-color: #F2A391;
   background-repeat: repeat-x;
   background-size: cover;
-}
-body
-{
-  background-color: #484649;
-
 }
 
 .positionBonhomme {
@@ -30,7 +25,7 @@ body
 }
 .navbar
 {
-  background-color: #313E3F !important;
+  //background-color: #313E3F !important;
   //opacity: 1 !important;
 }
 
@@ -52,4 +47,21 @@ footer
   height: 100px;
   background-color: black !important;
   opacity: 0.5 !important;
+}
+@media screen and (min-width: 200px) and (max-width: 1040px) {
+  .imgjumb,.positionBonhomme {
+    display:none;
+  }
+  .boutjumb {
+    margin-right: 150px;
+  }
+}
+.boutjumb{
+  margin-top: 15% !important;
+}
+.btn{
+  background-color: #F2A391 !important;
+}
+.h1{
+  font-size: 50px;
 }
