@@ -25,12 +25,9 @@ body
 }
 .navbar
 {
-
-  background-color: #313E3F !important;
-  position: fixed;
-  width: 100%;
-  z-index: 150;
-
+  //background-color: #313E3F !important;
+  //opacity: 1 !important;
+}
 
 .back
 {
@@ -59,12 +56,7 @@ footer
     margin-right: 150px;
   }
 }
-.boutjumb{
-  margin-top: 15% !important;
-}
-.btn{
-  background-color: #F2A391 !important;
-}
+
 .h1{
   font-size: 50px;
 }

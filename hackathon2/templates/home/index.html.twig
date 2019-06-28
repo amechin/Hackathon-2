@@ -6,7 +6,7 @@
         .jumb
         {
             height: 35% !important;
-            background-image: url("https://image.noelshack.com/fichiers/2019/26/5/1561711699-pexels-photo-461198.jpeg");
+            background-image: url("https://cdn.hipwallpaper.com/i/67/99/VJlgdD.jpg");
             background-repeat: repeat-x;
             background-size: cover;
             width: 100% !important;
@@ -21,7 +21,7 @@
         <div class="row my-3">
             <div class="col-md-3"></div>
             <div class="col-md-3 text-right mt-5 ml-3 p-2 boutjumb">
-                <a href="" class="btn btn-danger font-weight-bold">Commander</a>
+                <a href="" class="btn btn-warning font-weight-bold">Commander</a>
             </div>
             <div class="col-md-5 text-center imgjumb">
                 <img src="https://image.noelshack.com/fichiers/2019/26/4/1561650226-cuisine.png" alt="...">
@@ -36,7 +36,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(0,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
@@ -46,7 +46,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(6,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
@@ -56,7 +56,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(11,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
@@ -66,7 +66,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(16,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
@@ -76,7 +76,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(21,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
@@ -86,7 +86,7 @@
                 <div class="card-deck justify-content-center">
                     {% for toutresto in toutresto|slice(26,5) %}
                         <div class="mx-5">
-                            <a href="{{ path('restaurant') }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
+                            <a href="{{ path('restaurant', { 'id': toutresto.id }) }}"><img class="card-img-top" src="{{ toutresto.logo }}" alt="Card image cap" style="height: 150px"></a>
                             <p class="text-white">{{ toutresto.name }}</p>
                         </div>
                     {% endfor %}
