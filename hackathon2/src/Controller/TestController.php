@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Image;
 use App\Entity\Resto;
 use App\Entity\Tag;
 use App\Service\ImageScraper;
@@ -49,6 +50,33 @@ class TestController extends AbstractController
         $em->flush();
 
         return $this->redirectToRoute('home');
+    }
 
+    /**
+     * @Route("initImages", name="init_img")
+     */
+    public function initImg(ImageScraper $imgScraper)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $imgByResto = $imgScraper->getImagesByResto();
+        $restos = $this->getDoctrine()->getRepository(Resto::class)->findAll();
+
+        $len = count($restos);
+
+        for($i = 0;  $i < $len; $i++){
+            $image = new Image();
+            $image->setUrl($imgByResto[$i]['img']);
+            $restos[$i]->setLogo($imgByResto[$i]['logo']);
+            $restos[$i]->addImage($image);
+            $em->persist($restos[$i]);
+            $em->persist($image);
+        }
+
+        $em->flush();
+
+
+        return $this->render('test/index.html.twig', [
+            'images' => $imgByResto,
+        ]);
     }
 }

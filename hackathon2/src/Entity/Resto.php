@@ -34,11 +34,6 @@ class Resto
     private $adresse;
 
     /**
-     * @ORM\Column(type="string", length=255, nullable=true)
-     */
-    private $srcImg;
-
-    /**
      * @ORM\ManyToMany(targetEntity="App\Entity\Tag", inversedBy="restos")
      */
     private $tagId;
@@ -48,10 +43,21 @@ class Resto
      */
     private $plats;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\Image", inversedBy="restos")
+     */
+    private $images;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $logo;
+
     public function __construct()
     {
         $this->tagId = new ArrayCollection();
         $this->plats = new ArrayCollection();
+        $this->images = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -91,18 +97,6 @@ class Resto
     public function setAdresse(?string $adresse): self
     {
         $this->adresse = $adresse;
-
-        return $this;
-    }
-
-    public function getSrcImg(): ?string
-    {
-        return $this->srcImg;
-    }
-
-    public function setSrcImg(?string $srcImg): self
-    {
-        $this->srcImg = $srcImg;
 
         return $this;
     }
@@ -157,6 +151,44 @@ class Resto
             $this->plats->removeElement($plat);
             $plat->removeRestoId($this);
         }
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|Image[]
+     */
+    public function getImages(): Collection
+    {
+        return $this->images;
+    }
+
+    public function addImage(Image $image): self
+    {
+        if (!$this->images->contains($image)) {
+            $this->images[] = $image;
+        }
+
+        return $this;
+    }
+
+    public function removeImage(Image $image): self
+    {
+        if ($this->images->contains($image)) {
+            $this->images->removeElement($image);
+        }
+
+        return $this;
+    }
+
+    public function getLogo(): ?string
+    {
+        return $this->logo;
+    }
+
+    public function setLogo(?string $logo): self
+    {
+        $this->logo = $logo;
 
         return $this;
     }
