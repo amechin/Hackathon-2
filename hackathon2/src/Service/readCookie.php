@@ -15,7 +15,8 @@ class readCookie
         $index = random_int(0, sizeof($tab)-1);
         $var = $tab[$index];
         unset($var[array_search($var['cookie_id'], $var)]);
-        return arsort($var);
+        arsort($var);
+        return $var;
     }
 
     public static function parse_csv_file($file, $columnheadings = true, $delimiter = ',', $enclosure = "\"")
