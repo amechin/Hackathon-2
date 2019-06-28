@@ -21,14 +21,14 @@ class RestaurantController extends AbstractController
 
 
     /**
-     * @Route("/restaurant/{name<^[a-zA-Z0-9-]+$>}", defaults={"name" = null},
-     *  name="showRestaurantByName")
+     * @Route("/restaurant/{id<^[0-9-]+$>}", defaults={"id" = 1},
+     *  name="showRestaurantById")
      * @return Response
      **/
-    public function showRestaurantByName($name)
+    public function showRestaurantById($id)
     {
         $restaurant = $this->getDoctrine()->getRepository(Resto::class)
-            ->findOneBy(['Name'=>$name]);
+            ->findOneBy(['id'=>$id]);
         if(!$restaurant) {
             throw $this
                 ->createNotFoundException('No restaurant name send ');
