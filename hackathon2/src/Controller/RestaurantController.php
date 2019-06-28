@@ -34,7 +34,11 @@ class RestaurantController extends AbstractController
                 ->createNotFoundException('No restaurant name send ');
         }
 
-        return $this->render('restaurant/index.html.twig', ['restaurant'=>$restaurant]);
+        $restaurants = $this->getDoctrine()->getRepository(Resto::class)->findAll();
+
+        return $this->render('restaurant/index.html.twig', [
+            'restaurant'=>$restaurant,
+            'allResto'=>$restaurants]);
 
 
     }

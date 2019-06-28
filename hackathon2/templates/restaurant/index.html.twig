@@ -11,7 +11,9 @@
                     <h1>{{ restaurant.name }} </h1>
                     <img src="{{ restaurant.srcImg }}" alt="Logo du restaurant">
                     <div>
-                        <span class="badge badge-pill badge-info">Pizza</span>
+                        {%  for tag in restaurant.tagId %}
+                        <span class="badge badge-pill badge-info">{{ tag.name }}</span>
+                        {% endfor %}
                     </div>
                     <p>{{ restaurant.description }}</p>
                 </div>
@@ -22,22 +24,22 @@
     </div>
     <div class="container">
         <div class="row m-5" >
-            <h1>Nos menus</h1>
+            <h1>Les restaurants </h1>
         </div>
     </div>
     <div class="container-fluid">
         <div class="container">
         <div class="row">
-        {% for i in 0..6 %}
+        {% for resto in allResto %}
         <div class="card mb-3 ml-1 mr-3 d-flex shadow" style="max-width: 540px;">
             <div class="row no-gutters">
                 <div class="col-md-4 ml-3 mr-3 mt-3 align-self-center">
-                    <img src="https://via.placeholder.com/200" class="card-img" alt="Image du menu">
+                    <img src="{{ resto.logo }}" class="card-img" alt="Image du menu">
                 </div>
                 <div class="col-md-7">
                     <div class="card-body">
-                        <h5 class="card-title">Titre du menu</h5>
-                        <p class="card-text">Description du menu Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut cum, dolor dolore eos, esse eveniet facere fugiat labore maxime minus nihil, nulla provident repellat? Accusantium alias dolor nisi optio sapiente. </p>
+                        <h5 class="card-title">{{ resto.name }} </h5>
+                        <p class="card-text">{{ resto.description }} </p>
                         <div class="col-md-11 text-right m-2">
                             <a href="" class="btn btn-warning">Commander</a>
                         </div>
