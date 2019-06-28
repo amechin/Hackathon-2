@@ -25,9 +25,12 @@ body
 }
 .navbar
 {
-  //background-color: #313E3F !important;
-  //opacity: 1 !important;
-}
+
+  background-color: #313E3F !important;
+  position: fixed;
+  width: 100%;
+  z-index: 150;
+
 
 .back
 {
